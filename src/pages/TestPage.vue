@@ -45,8 +45,8 @@ export default {
         { title: '全局API',
           url: '#/globalapi'
         },
-        { title: 'test',
-          url: '#/myTest'
+        { title: '用JsBarcode制作条形码',
+          url: '#/barcode'
         }
       ]
     }

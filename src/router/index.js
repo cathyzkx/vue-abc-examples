@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import TestPage from '@/components/TestPage'
-import Directives1 from '@/components/Directives1'
-import Directives2 from '@/components/Directives2'
-import Directives3 from '@/components/Directives3'
-import GlobalAPI from '@/components/GlobalAPI'
-import myTest from '@/components/myTest'
+import TestPage from '@/pages/TestPage'
+import Directives1 from '@/pages/Directives1'
+import Directives2 from '@/pages/Directives2'
+import Directives3 from '@/pages/Directives3'
+import GlobalAPI from '@/pages/GlobalAPI'
+import Barcode from '@/pages/Barcode'
 
 Vue.use(Router)
 
@@ -37,9 +37,9 @@ export default new Router({
       component: GlobalAPI
     },
     {
-      path: '/myTest',
-      name: 'myTest',
-      component: myTest
+      path: '/Barcode',
+      name: 'Barcode',
+      component: Barcode
     }
   ]
 })
