@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jsbarcode测试</title>
+    <script type="text/javascript" src="../js/JsBarcode.all.js"></script>
+</head>
+<body>
+    <!--方式1-->
+    <svg id="barcode"></svg>
+    <hr>
+    <!--方式2-->
+    <canvas id="canvas"></canvas>
+    <hr>
+    <!--方式3-->
+    <img id="bcode"/>
+    <hr>
+    <script>
+       JsBarcode("#barcode", "Hi!");//or JsBarcode("#barcode", "Hi!");
+
+       JsBarcode("#canvas", "Hello world!");
+
+       JsBarcode("#bcode", "test");
+    </script>
+</body>
+</html>
