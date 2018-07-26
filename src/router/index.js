@@ -1,11 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import TestPage from '@/pages/TestPage'
-import Directives1 from '@/pages/Directives1'
-import Directives2 from '@/pages/Directives2'
-import Directives3 from '@/pages/Directives3'
-import GlobalAPI from '@/pages/GlobalAPI'
-import Barcode from '@/pages/Barcode'
+import { TestPage, Directives1, Directives2, Directives3, GlobalAPI, Barcode } from '@/pages'
+import Layout from '@/layout/Layout'
 
 Vue.use(Router)
 
@@ -13,6 +9,24 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Layout',
+      component: Layout,
+      children: [{
+        path: '',
+        component: TestPage
+      }]
+    },
+    {
+      path: '/directives',
+      name: 'Directives',
+      component: Layout,
+      children: [{
+        path: '',
+        component: Directives1
+      }]
+    },
+    {
+      path: '/test',
       name: 'TestPage',
       component: TestPage
     },

@@ -47,7 +47,7 @@
           <input type="radio" :value="false" v-model="vShow"/>false
           <br/><br/>
           <!----------------- 示例2-2 ------------------>
-          <span v-if="vShow" class="test-box">v-show所作用的DOM被显示</span>
+          <span v-show="vShow" class="test-box">v-show所作用的DOM被显示</span>
         </div>
       </div>
 
