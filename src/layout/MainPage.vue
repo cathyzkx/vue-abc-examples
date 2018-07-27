@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="main-page">
   <router-view></router-view>
 </div>
 </template>
@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style scoped>
-
+.main-page {
+  min-width: 1250px;
+}
 </style>

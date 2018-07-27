@@ -1,6 +1,6 @@
 <template>
   <el-container>
-    <el-aside width="auto">
+    <el-aside style="width: auto;">
       <SideBar></SideBar>
     </el-aside>
     <el-main>
@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import { SideBar, MainPage } from '../layout'
+import { SideBar, MainPage } from '@/layout'
+
 export default {
   name: 'Layout',
   components: {
@@ -21,5 +22,8 @@ export default {
 </script>
 
 <style scoped>
-
+.el-main {
+  padding: 0;
+  margin: 0;
+}
 </style>

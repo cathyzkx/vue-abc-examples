@@ -9,7 +9,6 @@
   <hr>
   <div class="flex-column">
     <div class="my-form">
-
       <h2>示例4：双向数据绑定：v-model</h2>
       <div class="flex-row">
         <div class="box">

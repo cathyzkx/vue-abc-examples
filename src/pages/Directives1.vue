@@ -9,7 +9,7 @@
   <hr>
   <div class="flex-column">
     <div class="my-form">
-      <h2>示例1：用Vue进行插值：v-text / v-html / Mustache语法（双大括号法）</h2>
+      <h2 id="vtext">示例1：用Vue进行插值：v-text / v-html / Mustache语法（双大括号法）</h2>
       <div class="flex-row">
         <div class="box">
           <h3>&hearts;&nbsp;v-text</h3>
