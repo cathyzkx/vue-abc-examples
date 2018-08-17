@@ -1,14 +1,15 @@
 <template>
-<div class="main-page">
-  <router-view></router-view>
-</div>
+  <div>
+    test
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'MainPage'
+  name: 'LoginByWechat'
 }
 </script>
 
 <style scoped>
+
 </style>

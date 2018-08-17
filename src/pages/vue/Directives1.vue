@@ -4,7 +4,7 @@
 * 功能: Vue基本指令测试
 */
 <template>
-<div class="bg">
+<div>
   <h1>表单元素</h1>
   <hr>
   <div class="flex-column">
@@ -89,5 +89,5 @@ export default {
 </script>
 
 <style scoped>
-  @import '../styles/pages.css';
+  @import '../../styles/pages.css';
 </style>

@@ -205,11 +205,11 @@ function setChange () {
 // -------------- Vue.component：全局化注册组件 ---------------------------------
 // ------------------------------------------------------------------------
 Vue.component('portal', {
-  template: '<span style="text-align: left;"><a href="./">回到主页</a></span>'
+  template: '<span style="text-align: left;"><a href="..">回到主页</a></span>'
 })
 
 </script>
 
 <style scoped>
-  @import '../styles/pages.css';
+  @import '../../styles/pages.css';
 </style>

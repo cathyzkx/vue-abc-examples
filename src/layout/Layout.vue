@@ -1,5 +1,5 @@
 <template>
-  <el-container>
+  <el-container class="bg" style="min-width: 1480px;">
     <el-aside style="width: auto;">
       <SideBar></SideBar>
     </el-aside>
@@ -22,8 +22,6 @@ export default {
 </script>
 
 <style scoped>
-.el-main {
-  padding: 0;
-  margin: 0;
-}
+  @import '../styles/pages.css';
+
 </style>

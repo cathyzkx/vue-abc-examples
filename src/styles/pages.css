@@ -3,6 +3,11 @@
   background-size: auto;
   min-height: 100vh;
 }
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 0;
+}
 .flex-column {
   display: flex;
   flex-flow: column nowrap;
@@ -10,7 +15,7 @@
   align-items: center;
 }
 .my-form {
-  width: 1200px;
+  width: 1000px;
   text-align: left;
   padding: 30px;
 }
@@ -25,7 +30,7 @@
 }
 .center-layout {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import { TestPage, Directives1, Directives2, Directives3, GlobalAPI1, Barcode } from '@/pages'
+import { TestPage, Directives1, Directives2, Directives3, GlobalAPI1, Barcode, LoginByWechat } from '@/pages'
 import { Layout, MainPage } from '@/layout'
 
 Vue.use(Router)
@@ -53,12 +53,16 @@ export default new Router({
 
     // Vue插件/Js库
     {
-      path: '/plugin',
+      path: '/tool',
       component: Layout,
       children: [
         {
           path: 'JsBarcode',
           component: Barcode
+        },
+        {
+          path: 'login',
+          component: LoginByWechat
         }]
     }
   ],

@@ -4,7 +4,7 @@
 * 功能: Vue基本指令测试
 */
 <template>
-<div class="bg">
+<div>
   <h1>V-bind（可省略，即直接写作:）</h1>
   <hr>
   <div class="flex-column">
@@ -95,17 +95,17 @@ export default {
       setStyle5: 'show-bg',
       setHeight: 120,
       picList: [
-        { pic: require('../assets/img/pikachu1.jpg'),
+        { pic: require('../../assets/img/pikachu1.jpg'),
           description: '包在我身上' },
-        { pic: require('../assets/img/pikachu2.jpeg'),
+        { pic: require('../../assets/img/pikachu2.jpeg'),
           description: '快看那里有个丑八怪' },
-        { pic: require('../assets/img/pikachu3.gif'),
+        { pic: require('../../assets/img/pikachu3.gif'),
           description: '哇！智障！' },
-        { pic: require('../assets/img/pikachu4.jpeg'),
+        { pic: require('../../assets/img/pikachu4.jpeg'),
           description: '身边都是SB' },
-        { pic: require('../assets/img/pikachu5.gif'),
+        { pic: require('../../assets/img/pikachu5.gif'),
           description: '气到发电' },
-        { pic: require('../assets/img/pikachu6.gif'),
+        { pic: require('../../assets/img/pikachu6.gif'),
           description: '好！我滚！' }
       ]
     }
@@ -138,14 +138,14 @@ export default {
 </script>
 
 <style scoped>
-  @import '../styles/pages.css';
+  @import '../../styles/pages.css';
 
   .blue {
     color: skyblue;
     font-family: "Comic Sans MS";
   }
   .show-bg {
-    background-image: url("../assets/img/carrotbg.jpg");
+    background-image: url("../../assets/img/carrotbg.jpg");
     background-size: cover;
   }
   .show-bg2 {
