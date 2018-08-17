@@ -1,6 +1,6 @@
-# vuetest
+# vue-abc-examples
 
-> a test program for vue 2.0
+> some vue program examples for vue 2.0
 
 ## Build Setup
 
