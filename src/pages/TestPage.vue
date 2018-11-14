@@ -1,4 +1,4 @@
-/**
+<script src="../../../vue-abc/src/pages/index.js"></script>/**
 * 创建于 2018/7/4
 * 作者: ZhangKaixi
 * 功能: 演示页面首页

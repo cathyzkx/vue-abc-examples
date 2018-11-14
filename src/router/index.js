@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import { TestPage, Directives1, Directives2, Directives3, GlobalAPI1, Barcode, LoginByWechat } from '@/pages'
+import { TestPage, Directives1, Directives2, Directives3, GlobalAPI1, Barcode, LoginByWechat, Test, ECharts } from '@/pages'
 import { Layout, MainPage } from '@/layout'
 
 Vue.use(Router)
@@ -56,6 +56,14 @@ export default new Router({
       path: '/tool',
       component: Layout,
       children: [
+        {
+          path: 'test',
+          component: Test
+        },
+        {
+          path: 'echarts',
+          component: ECharts
+        },
         {
           path: 'JsBarcode',
           component: Barcode

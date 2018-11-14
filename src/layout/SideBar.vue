@@ -1,31 +1,31 @@
 <template>
-<div :class="isCollapse ? 'close' : 'open'">
-  <div class="sidebar">
-    <div class="switch center-layout" @click="isCollapse = !isCollapse">
-      <img v-if="isCollapse === true"
-           src="@/assets/icon/hide.svg" width="30px" style="transform:rotate(180deg); margin: 0;"/>
-      <img v-if="isCollapse === false"
-           src="@/assets/icon/hide.svg" height="30px"/>
-      <span v-if="isCollapse === false">&nbsp;CLOSE</span>
-    </div>
-    <el-menu default-active="1-1"
-             class="el-menu-vertical-demo"
-             text-color="green"
-             @open="handleOpen"
-             @close="handleClose"
-             :collapse="isCollapse">
-      <el-submenu v-for="(chief, chiefInd) in menuList"
-                  :key="chiefInd"
-                  :index="(chiefInd+1).toString()">
-        <template slot="title">
-          <img :src="chief.icon" width="30px"/>&nbsp;
-          <span slot="title"
-                class="my-title"
-                v-text="chief.title1"></span>
-        </template>
-        <el-submenu v-for="(vice, viceInd) in chief.subList"
-                    :key="viceInd"
-                    :index="(chiefInd+1)+'-'+(viceInd+1)">
+  <div :class="isCollapse ? 'close' : 'open'">
+    <div class="sidebar">
+      <div class="switch center-layout" @click="isCollapse = !isCollapse">
+        <img v-if="isCollapse === true"
+             src="@/assets/icon/hide.svg" width="30px" style="transform:rotate(180deg); margin: 0;"/>
+        <img v-if="isCollapse === false"
+             src="@/assets/icon/hide.svg" height="30px"/>
+        <span v-if="isCollapse === false">&nbsp;CLOSE</span>
+      </div>
+      <el-menu default-active="1-1"
+               class="el-menu-vertical-demo"
+               text-color="green"
+               @open="handleOpen"
+               @close="handleClose"
+               :collapse="isCollapse">
+        <el-submenu v-for="(chief, chiefInd) in menuList"
+                    :key="chiefInd"
+                    :index="(chiefInd+1).toString()">
+          <template slot="title">
+            <img :src="chief.icon" width="30px"/>&nbsp;
+            <span slot="title"
+                  class="my-title"
+                  v-text="chief.title1"></span>
+          </template>
+          <el-submenu v-for="(vice, viceInd) in chief.subList"
+                      :key="viceInd"
+                      :index="(chiefInd+1)+'-'+(viceInd+1)">
             <span slot="title">
               <img src="@/assets/icon/title2.svg" width="30px"/>&nbsp;
               <span v-text="vice.title2"></span>
@@ -38,11 +38,11 @@
                 {{ child.title3 }}
               </el-menu-item>
             </router-link>
+          </el-submenu>
         </el-submenu>
-      </el-submenu>
-    </el-menu>
+      </el-menu>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -91,14 +91,27 @@ export default {
         icon: require('../assets/icon/tool.svg'),
         title1: '工具包',
         subList: [{
+          title2: '测试页',
+          childList: [
+            {
+              link: '/tool/test',
+              title3: 'index'
+            }]
+        }, {
+          title2: 'ECharts',
+          childList: [
+            {
+              link: '/tool/echarts',
+              title3: '图表测试'
+            }]
+        }, {
           title2: 'JsBarcode',
           childList: [
             {
               link: '/tool/JsBarcode',
               title3: '条码生成'
             }]
-        },
-        {
+        }, {
           title2: '第三方登录',
           childList: [
             {
@@ -119,19 +132,19 @@ export default {
             }]
         }]
       }
-      /*
-      , {
-          icon: require('../assets/icon/star.svg'),
-          title1: '',
-          subList: [{
-            title2: '',
-            childList: [{
-              link: '',
-              title3: ''
-            }]
-          }]
-        }
-      */
+        /*
+          , {
+              icon: require('../assets/icon/star.svg'),
+              title1: '',
+              subList: [{
+                title2: '',
+                childList: [{
+                  link: '',
+                  title3: ''
+                }]
+              }]
+            }
+          */
       ]
     }
   },

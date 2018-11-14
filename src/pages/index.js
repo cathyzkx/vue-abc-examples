@@ -10,4 +10,8 @@ export { default as GlobalAPI1 } from './vue/GlobalAPI1'
 
 export { default as Barcode } from './tool/Barcode'
 
-export { default as LoginByWechat } from './tool/LoginByWechat'
+export { default as LoginByWechat } from './tool/login/LoginByWechat'
+
+export { default as Test } from './tool/test/Test'
+
+export { default as ECharts } from './tool/echarts/ECharts'

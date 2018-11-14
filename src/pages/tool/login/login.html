@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+    <title>Title</title>
+</head>
+<body>
+  <div id="myWeixin" style="height: 300px; width: 300px;"></div>
+  <script>
+    var obj = new WxLogin({
+      self_redirect: true,
+      id: "myWeixin",
+      appid: "wx9a2703efefc55179",
+      scope: "snsapi_login",
+      redirect_uri: "http://passport.panda-fa.com",
+      state: "",
+      style: "black",
+      href: ""
+    });
+  </script>
+</body>
+</html>
