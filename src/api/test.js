@@ -1,9 +1,9 @@
 import fetch from '../utils/fetch'
 
 // 仓库管理-仓库列表
-export function test (params) {
+export function barChart1 (params) {
   return fetch({
-    url: '/tool/test',
+    url: 'tool/echarts/bar-chart-1',
     method: 'get',
     params
   })
